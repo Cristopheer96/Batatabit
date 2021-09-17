@@ -390,12 +390,23 @@ text-align: center;
         Justify-content: center;  
         align-items: center;
      }
-     .card2{
-        text-align: center;
-         width: 19rem;
-         height: 25rem;
+     .SectionCards{
+         height: 32rem;
+         display: flex;
+         overflow-x: scroll;
+         overscroll-behavior-x: contain;
+         scroll-snap-type: x proximity;
+         width: 100%;
+         gap: 2rem;
+     }
+     .card2,.card1,.card3{
          position: relative;
-         
+         gap: 2rem;
+         scroll-snap-align: center;
+        text-align: center;
+         height: 25rem;
+         width: 190px;
+
         margin: 0 auto;
         margin-top: 5rem;
         background: #FFFFFF;
@@ -420,7 +431,7 @@ text-align: center;
      }
      .disclaimer{
         font-size: 1.2rem;
-        width: 16rem;
+        width: 19rem;
         margin: 0 auto;
         position: relative;
         top: 2.6rem;
